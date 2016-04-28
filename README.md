@@ -7,9 +7,11 @@ This does not handle actually displaying or handing notifications - it only gets
 ## Installation
 
 This module requires using [CocoaPods](https://cocoapods.org/) in order to install
+
 `npm install --save react-native-gcm-ios`
 
 Add this pod to your podfile
+
 `pod 'react-native-gcm-ios', :path => '../node_modules/react-native-gcm-ios'`
 
 Follow the directions in the [GCM docs](https://developers.google.com/cloud-messaging/ios/client) to get an APNS certificate, upload it, and get a `GoogleService-Info.plist` to add to your project.
