@@ -18,7 +18,7 @@ Follow the directions in the [GCM docs](https://developers.google.com/cloud-mess
 
 ## Usage
 ```javascript
-var GcmIOS = require('react-native-gcm-ios');
+import GcmIOS from 'react-native-gcm-ios'
 
 GcmIOS.addListener('register', (gcmToken) => {
   //send the token to your backend here
