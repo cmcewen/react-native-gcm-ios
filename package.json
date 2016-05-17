@@ -1,6 +1,6 @@
 {
   "name": "react-native-gcm-ios",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Use GCM for iOS in React Native projects",
   "main": "index.ios.js",
   "scripts": {

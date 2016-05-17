@@ -6,7 +6,7 @@ This does not handle actually displaying or handing notifications - it only gets
 
 ## Installation
 
-This module requires using [CocoaPods](https://cocoapods.org/) in order to install
+This module requires using [CocoaPods](https://cocoapods.org/) in order to install. [This](https://blog.callstack.io/login-users-with-facebook-in-react-native-4b230b847899) is a good article if you haven't set up CocoaPods with RN yet
 
 `npm install --save react-native-gcm-ios`
 
@@ -19,6 +19,7 @@ Follow the directions in the [GCM docs](https://developers.google.com/cloud-mess
 ## Usage
 ```javascript
 import GcmIOS from 'react-native-gcm-ios'
+import PushNotification from 'react-native-push-notification'
 
 GcmIOS.addListener('register', (gcmToken) => {
   //send the token to your backend here
@@ -27,4 +28,6 @@ GcmIOS.addListener('register', (gcmToken) => {
 GcmIOS.addListener('error', (error) => {
   console.log(error);
 })
+
+PushNotification.requestPermissions()
 ```
